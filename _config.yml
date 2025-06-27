@@ -7,16 +7,16 @@ first_name: Ray
 middle_name: Zirui
 last_name: Zhang
 contact_note: >
-  Email: zirui.zhang@uci.edu
+  Email: rzhang8@wpi.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  I'm a Visiting Assistant Professor in the Department of Mathematics at the University of California, Irvine, mentored by John Lowengrub. I obtained my Ph.D. at UC San Diego, advised by Li-Tien Cheng, co-advised by Bo Li.
+  
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://Rayzhangzirui.github.io # the base hostname & protocol for your site
+url: https://rayzhangzirui.github.io # the base hostname & protocol for your site
 baseurl:
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR

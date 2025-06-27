@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Ray Zirui Zhang",
-    "label": "Visiting Assistant Professor",
+    "label": "Assistant Professor",
     "image": "",
     "email": "zirui.zhang@uci.edu",
     "phone": "",
     "url": "",
-    "summary": "I'm a Visiting Assistant Professor in the Department of Mathematics at the University of California, Irvine, mentored by John Lowengrub. I obtained my Ph.D. at UC San Diego, advised by Li-Tien Cheng, co-advised by Bo Li. \n\nMy research interests lie in scientific machine learning and numerical analysis, with applications in biophysics and cancer research.",
+    // "summary": "I'm a Visiting Assistant Professor in the Department of Mathematics at the University of California, Irvine, mentored by John Lowengrub. I obtained my Ph.D. at UC San Diego, advised by Li-Tien Cheng, co-advised by Bo Li. \n\nMy research interests lie in scientific machine learning and numerical analysis, with applications in biophysics and cancer research.",
     "location": {
       "city": "Irvine",
       "countryCode": "US",
