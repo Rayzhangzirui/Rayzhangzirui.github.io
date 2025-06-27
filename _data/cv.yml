@@ -2,96 +2,132 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Ray Zirui Zhang
+    - name: Email
+      value: zirui.zhang@uci.edu
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: My research interests lie in scientific machine learning and numerical analysis, with applications in biophysics and cancer research.
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Mathematics
+      institution: University of California, San Diego
+      year: 2017 - 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Advised by Li-Tien Cheng, co-advised by Bo Li
+    - title: M.Sc. in Computational Science
+      institution: University of California, San Diego
+      year: 2017 - 2019
+    - title: Research Internship Program
+      institution: École Polytechnique
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Supervised by Prof. Sébastien Michelin
+    - title: Bachelor of Engineering
+      institution: University of Hong Kong
+      year: 2012 - 2016
+    - title: Exchange student
+      institution: University of Wisconsin, Madison
+      year: 2014 - 2015
 
-- title: Experience
+- title: Awards & Honors
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Keynote speaker for the session Computational Models and Methods for Predicting Cancer Progression and Treatment Response at WCCM
+        - UCI Systems Biology Opportunity Award (with Rany Tith and Song Zhu)
+        - Rising Star speaker at UCI Center for Complex Biological Systems Retreat
+    - year: 2023
       items:
-        - Max Planck Medal
+        - The Data Science Conference 2023 travel grant (NSF)
+    - year: 2022
+      items:
+        - Powell Dissertation Award (UCSD)
+    - year: 2021
+      items:
+        - Gold Medal of BirdCLEF 2021 – Birdcall Identification (Kaggle)
+    - year: 2019
+      items:
+        - James B. Ax Fellowship (UCSD)
+    - year: 2017
+      items:
+        - Emerging Engineering Award (Institute of Civil Engineers)
+    - year: 2012 - 2016
+      items:
+        - Soong Ching Ling Scholarship (Soong Ching Ling Foundation)
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Publications
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - BiLO: Bilevel Local Operator Learning for PDE inverse problems. Ray Zirui Zhang, Xiaohui Xie, John Lowengrub. Submitted. [arXiv] [code]
+    - Personalized Predictions of Glioblastoma Infiltration: Mathematical Models, Physics-Informed Neural Networks and Multimodal Scans. Ray Zirui Zhang, Ivan Ezhov, Michal Balcerak, Andy Zhu, Benedikt Wiestler, Bjoern Menze, John Lowengrub. Medical Image Analysis, 2024. [Journal] [arXiv] [code] [slide]
+    - Individualizing Glioma Radiotherapy Planning by Optimization of a Data and Physics Informed Discrete Loss. Michal Balcerak, Ivan Ezhov, Petr Karnakov, Sergey Litvinov, Petros Koumoutsakos, Jonas Weidner, Ray Zirui Zhang, John S Lowengrub, Bene Wiestler, Bjoern Menze. Submitted. [arXiv][code]
+    - A Compact Coupling Interface Method with Second-Order Gradient Approximation for Elliptic Interface Problems. Ray Zirui Zhang, Li-Tien Cheng. Journal of Scientific Computing, 2024. [Journal] [arXiv] [Code]
+    - Binary Level Set method for Variational Implicit Solvation Model. Ray Zirui Zhang, Li-Tien Cheng. SIAM Journal of Scientific Computing, 2023. [Journal] [arXiv] [Code] [Slide]
+    - Explicit-Solute Implicit-Solvent Molecular Simulation with Binary Level-Set, Adaptive-Mobility, and GPU. Shuang Liu, Zirui Zhang, Li-Tien Cheng, Bo Li. Journal of Computational Physics, 2023. [Journal] [arXiv]
+    - Coupling Monte Carlo, Variational Implicit Solvation, and Binary Level-Set for Simulations of Biomolecular Binding. Zirui Zhang, Clarisse Gravina Ricci, Chao Fan, Li-Tien Cheng, Bo Li, J.Andrew McCammon. Journal of Chemical Theory and Computation, 2021. [Journal]
+    - Runout Scaling and Deposit Morphology of Rapid Mudflows. Lu Jing, Fiona C. Y. Kwok, Andy Y. F. Leung, Zirui Zhang, Lutao Dai. Journal of Geophysical Research: Earth Surface. [Journal]
+
+- title: Talks
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - The Mathematics of Data, Dynamics, and Life Sciences (MDDLS) Conference, UCI
+    - year: 2024
+      items:
+        - Computational and Applied Mathematics Colloquium, Penn State
+        - 16th World Congress on Computational Mechanics and 4th Pan American Congress on Computational Mechanics, Vancouver, Canada
+        - Joint Annual Meeting of the Korean Society for Mathematical Biology and the Society for Mathematical Biology, Seoul, Korea
+        - SIAM conference on Life Science
+        - 2024 UCI Systems Biology Retreat
+        - SIAM Southern California Applied Mathematics Symposium, UCSD
+        - Statistical and Machine Learning Applications in Biomedical Sciences, UCI
+        - Center for Computational Mathematics Seminar, UCSD
+        - UCI Systems Biology Retreat
+        - The International Conference on New Trends in Computational and Data Sciences, Caltech
+        - Predictive Modeling in Biology and Medicine Conference, UCR
+    - year: 2023
+      items:
+        - Long Feng Science Forum, The Chinese University of Hong Kong, Shenzhen
+        - 17th U.S. National Congress on Computational Mechanics, Albuquerque, New Mexico
+        - The Data Science Conference, Data Institute at the University of San Francisco
+        - SIAM Southern California Applied Mathematics Symposium, UCI
+        - Applied Mathematics Seminar, UCI
+    - year: 2022
+      items:
+        - New Trends in Computational and Data Sciences, Caltech
+        - 5th Annual Meeting of the SIAM Texas-Louisiana Section, U Houston
+        - SIAM Southern California Applied Mathematics Symposium, Harvey Mudd College
+        - New Trends in Scientific Computing, IPAM, UCLA
+    - year: 2021
+      items:
+        - SIAM Conference on Applied and Computational Discrete Algorithms
+        - SIAM Conference on Computational Science and Engineering
+    - year: 2020
+      items:
+        - Center For Computational Mathematics Seminar, UCSD
+
+- title: Services
+  type: list
+  contents:
+    - Mentor of 2024 Math ExpLR: Summer Research Program for High School Students
+    - Organizer of Minisymposium Image-Guided Mathematical Modeling in Clinical and Pre-Clinical Oncology  at SMB Annual Meeting 2024
+    - Guest Lecturer of UCI Cancer Systems Biology Short Course 2024
+    - Reviewer of NeurIPS 2024
+    - Member of Organizing Committee of SOCAMS 2023
+    - Volunteer tutor at Math Open House, helping bridge the math knowledge gap for incoming undergraduate students
+
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Instructor, UC Irvine
+      year: 2022-2024
+      description:
+        - MATH 9 Introduction to Programming for Numerical Analysis (FA22, SP23, SP24)
+        - MATH 10 Introduction to Programming for Data Science (SP24, FA24)
