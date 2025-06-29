@@ -3,30 +3,22 @@
     "name": "Ray Zirui Zhang",
     "label": "Assistant Professor",
     "image": "",
-    "email": "zirui.zhang@uci.edu",
+    "email": "rzhang8@wpi.edu",
     "phone": "",
     "url": "",
-    // "summary": "I'm a Visiting Assistant Professor in the Department of Mathematics at the University of California, Irvine, mentored by John Lowengrub. I obtained my Ph.D. at UC San Diego, advised by Li-Tien Cheng, co-advised by Bo Li. \n\nMy research interests lie in scientific machine learning and numerical analysis, with applications in biophysics and cancer research.",
-    "location": {
-      "city": "Irvine",
-      "countryCode": "US",
-      "region": "California"
-    },
     "profiles": []
   },
   "work": [
     {
+      "name": "Worcester Polytechnic Institute",
+      "position": "Assistant Professor",
+      "startDate": "2025-08-01"
+    },
+    {
       "name": "University of California, Irvine",
       "position": "Visiting Assistant Professor",
       "startDate": "2022-09-01",
-      "summary": "Mentored by John Lowengrub."
-    },
-    {
-      "name": "École Polytechnique",
-      "position": "Research Intern",
-      "startDate": "2021-09-01",
-      "endDate": "2021-12-31",
-      "summary": "Supervised by Prof. Sébastien Michelin."
+      "endDate": "2025-06-30"
     }
   ],
   "education": [
@@ -34,9 +26,8 @@
       "institution": "University of California, San Diego",
       "area": "Mathematics",
       "studyType": "Ph.D.",
-      "startDate": "2017-09-01",
-      "endDate": "2022-06-30",
-      "summary": "Advised by Li-Tien Cheng, co-advised by Bo Li"
+      "startDate": "2019-05-31",
+      "endDate": "2022-06-30"
     },
     {
       "institution": "University of California, San Diego",
@@ -51,6 +42,15 @@
       "studyType": "Bachelor of Engineering",
       "startDate": "2012-09-01",
       "endDate": "2016-06-30"
+    }
+  ],
+  "Others":[
+    {
+      "name": "École Polytechnique",
+      "position": "Research Intern",
+      "startDate": "2021-09-01",
+      "endDate": "2021-12-31",
+      "summary": "Supervised by Prof. Sébastien Michelin."
     },
     {
       "institution": "University of Wisconsin, Madison",
@@ -108,53 +108,6 @@
       "summary": "2012 - 2016"
     }
   ],
-  "publications": [
-    {
-      "name": "BiLO: Bilevel Local Operator Learning for PDE inverse problems",
-      "publisher": "Submitted",
-      "summary": "Ray Zirui Zhang, Xiaohui Xie, John Lowengrub. [arXiv] [code]"
-    },
-    {
-      "name": "Personalized Predictions of Glioblastoma Infiltration: Mathematical Models, Physics-Informed Neural Networks and Multimodal Scans.",
-      "publisher": "Medical Image Analysis",
-      "releaseDate": "2024",
-      "summary": "Ray Zirui Zhang, Ivan Ezhov, Michal Balcerak, Andy Zhu, Benedikt Wiestler, Bjoern Menze, John Lowengrub. [Journal] [arXiv] [code] [slide]"
-    },
-    {
-      "name": "Individualizing Glioma Radiotherapy Planning by Optimization of a Data and Physics Informed Discrete Loss.",
-      "publisher": "Submitted",
-      "summary": "Michal Balcerak, Ivan Ezhov, Petr Karnakov, Sergey Litvinov, Petros Koumoutsakos, Jonas Weidner, Ray Zirui Zhang, John S Lowengrub, Bene Wiestler, Bjoern Menze. [arXiv][code]"
-    },
-    {
-      "name": "A Compact Coupling Interface Method with Second-Order Gradient Approximation for Elliptic Interface Problems.",
-      "publisher": "Journal of Scientific Computing",
-      "releaseDate": "2024",
-      "summary": "Ray Zirui Zhang, Li-Tien Cheng. [Journal] [arXiv] [Code]"
-    },
-    {
-      "name": "Binary Level Set method for Variational Implicit Solvation Model.",
-      "publisher": "SIAM Journal of Scientific Computing",
-      "releaseDate": "2023",
-      "summary": "Ray Zirui Zhang, Li-Tien Cheng. [Journal] [arXiv] [Code] [Slide]"
-    },
-    {
-      "name": "Explicit-Solute Implicit-Solvent Molecular Simulation with Binary Level-Set, Adaptive-Mobility, and GPU.",
-      "publisher": "Journal of Computational Physics",
-      "releaseDate": "2023",
-      "summary": "Shuang Liu, Zirui Zhang, Li-Tien Cheng, Bo Li. [Journal] [arXiv]"
-    },
-    {
-      "name": "Coupling Monte Carlo, Variational Implicit Solvation, and Binary Level-Set for Simulations of Biomolecular Binding.",
-      "publisher": "Journal of Chemical Theory and Computation",
-      "releaseDate": "2021",
-      "summary": "Zirui Zhang, Clarisse Gravina Ricci, Chao Fan, Li-Tien Cheng, Bo Li, J.Andrew McCammon. [Journal]"
-    },
-    {
-      "name": "Runout Scaling and Deposit Morphology of Rapid Mudflows.",
-      "publisher": "Journal of Geophysical Research: Earth Surface",
-      "summary": "Lu Jing, Fiona C. Y. Kwok, Andy Y. F. Leung, Zirui Zhang, Lutao Dai. [Journal]"
-    }
-  ],
   "interests": [
     {
       "name": "Research",
@@ -191,21 +144,6 @@
       "organization": "SOCAMS 2023",
       "position": "Member of Organizing Committee",
       "startDate": "2023"
-    },
-    {
-      "organization": "Math Open House",
-      "position": "Volunteer tutor",
-      "summary": "helping bridge the math knowledge gap for incoming undergraduate students"
-    }
-  ],
-  "teaching": [
-    {
-      "institution": "UC Irvine",
-      "position": "Instructor",
-      "courses": [
-        "MATH 9 Introduction to Programming for Numerical Analysis (FA22, SP23, SP24)",
-        "MATH 10 Introduction to Programming for Data Science (SP24, FA24)"
-      ]
     }
   ],
   "talks": [

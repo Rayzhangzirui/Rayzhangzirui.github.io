@@ -1,13 +1,13 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://www.wpi.edu/'>Worcester Polytechnic Institute</a>. 
 # Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: photo.jpeg
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>

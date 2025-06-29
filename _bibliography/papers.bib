@@ -1,115 +1,103 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@misc{balcerakIndividualizingGliomaRadiotherapy2024,
+  title = {Individualizing {{Glioma Radiotherapy Planning}} by {{Optimization}} of {{Data}} and {{Physics-Informed Discrete Loss}}},
+  author = {Balcerak, Michal and Weidner, Jonas and Karnakov, Petr and Ezhov, Ivan and Litvinov, Sergey and Koumoutsakos, Petros and Zhang, Ray Zirui and Lowengrub, John S. and Wiestler, Bene and Menze, Bjoern},
+  year = {2024},
+  month = feb,
+  number = {arXiv:2312.05063},
+  eprint = {2312.05063},
+  primaryclass = {physics, q-bio},
+  publisher = {arXiv},
+  urldate = {2024-03-13},
+  abstract = {Brain tumor growth is unique to each patient and extends beyond what is visible in imaging scans, infiltrating surrounding brain tissue. Understanding these hidden patient-specific progressions is essential for effective therapies. Current treatment plans for brain tumors, such as radiotherapy, typically involve delineating a uniform margin around the visible tumor on pre-treatment scans to target this invisible tumor growth. This "one size fits all" approach is derived from population studies and often fails to account for the nuances of individual patient conditions. We present the framework GliODIL which infers the full spatial distribution of tumor cell concentration from available multi-modal imaging. This is achieved through the newly introduced method of Optimizing the Discrete Loss (ODIL), where both data and physics-based constraints are softly assimilated into the solution. Our test dataset comprises 152 glioblastoma patients with pre-treatment imaging and post-treatment follow-ups for tumor recurrence monitoring. By blending data-driven techniques with physics-based constraints adapted for complex cases, GliODIL enhances recurrence prediction in radiotherapy planning, offering a superior alternative to traditional uniform margins and strict PDE adherence.},
+  archiveprefix = {arXiv},
+  keywords = {Mathematics - Numerical Analysis,Physics - Medical Physics,Quantitative Biology - Quantitative Methods},
+  file = {/Users/Ray/Zotero/storage/L8MN9FJZ/Balcerak et al. - 2024 - Individualizing Glioma Radiotherapy Planning by Op.pdf;/Users/Ray/Zotero/storage/T543VYEE/2312.html}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+
+@article{liuExplicitsoluteImplicitsolventMolecular2023,
+  title = {Explicit-Solute Implicit-Solvent Molecular Simulation with Binary Level-Set, Adaptive-Mobility, and {{GPU}}},
+  author = {Liu, Shuang and Zhang, Zirui and Cheng, Hsiao-Bing and Cheng, Li-Tien and Li, Bo},
+  year = {2023},
+  month = jan,
+  journal = {Journal of Computational Physics},
+  volume = {472},
+  pages = {111673},
+  issn = {0021-9991},
+  doi = {10.1016/j.jcp.2022.111673},
+  urldate = {2023-08-24},
+  abstract = {Coarse-grained modeling and efficient computer simulations are critical to the study of complex molecular processes with many degrees of freedom and multiple spatiotemporal scales. Variational implicit-solvent model (VISM) for biomolecular solvation is such a modeling framework, and its initial success has been demonstrated consistently. In VISM, an effective free-energy functional of solute-solvent interfaces is minimized, and the surface energy is a key component of the free energy. In this work, we extend VISM to include the solute mechanical interactions, and develop fast algorithms and GPU implementation for the extended variational explicit-solute implicit-solvent (VESIS) molecular simulations to determine the underlying molecular equilibrium conformations. We employ a fast binary level-set method for minimizing the solvation free energy of solute-solvent interfaces and construct an adaptive--mobility gradient descent method for solute atomic optimization. We also implement our methods on the integrated GPU. Numerical tests and applications to several molecular systems verify the accuracy, stability, and efficiency of our methods and algorithms. It is found that our new methods and GPU implementation improve the efficiency of the molecular simulation significantly over the CPU implementation. Our fast computational techniques may enable us to simulate very large systems such as protein-protein interactions and membrane dynamics for which explicit-solvent all-atom molecular dynamics simulations can be very expensive.},
+  keywords = {Binary level-set method,Coulomb-field approximation,GPU implementation,Molecular mechanical interactions,Variational implicit-solvent explicit-solute model},
+  file = {/Users/Ray/Zotero/storage/BHEHPVQG/Liu et al. - 2023 - Explicit-solute implicit-solvent molecular simulat.pdf;/Users/Ray/Zotero/storage/EYY525CM/S0021999122007367.html}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@misc{zhangBiLOBilevelLocal2024,
+  title = {{{BiLO}}: {{Bilevel Local Operator Learning}} for {{PDE}} Inverse Problems},
+  shorttitle = {{{BiLO}}},
+  author = {Zhang, Ray Zirui and Xie, Xiaohui and Lowengrub, John},
+  year = {2024},
+  month = apr,
+  number = {arXiv:2404.17789},
+  eprint = {2404.17789},
+  primaryclass = {cs, math},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2404.17789},
+  note={<a href="https://github.com/rayzhangzirui/BiLO" target="_blank">[GitHub]</a>},
+  urldate = {2024-06-10},
+  abstract = {We propose a new neural network based method for solving inverse problems for partial differential equations (PDEs) by formulating the PDE inverse problem as a bilevel optimization problem. At the upper level, we minimize the data loss with respect to the PDE parameters. At the lower level, we train a neural network to locally approximate the PDE solution operator in the neighborhood of a given set of PDE parameters, which enables an accurate approximation of the descent direction for the upper level optimization problem. The lower level loss function includes the L2 norms of both the residual and its derivative with respect to the PDE parameters. We apply gradient descent simultaneously on both the upper and lower level optimization problems, leading to an effective and fast algorithm. The method, which we refer to as BiLO (Bilevel Local Operator learning), is also able to efficiently infer unknown functions in the PDEs through the introduction of an auxiliary variable. We demonstrate that our method enforces strong PDE constraints, is robust to sparse and noisy data, and eliminates the need to balance the residual and the data loss, which is inherent to soft PDE constraints.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Mathematics - Numerical Analysis,Mathematics - Optimization and Control},
+  file = {/Users/Ray/Zotero/storage/7Z4Q6MKT/Zhang et al. - 2024 - BiLO Bilevel Local Operator Learning for PDE inve.pdf;/Users/Ray/Zotero/storage/JNPZN49U/2404.html}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+
+
+@article{zhangCompactCouplingInterface2024,
+  title = {A {{Compact Coupling Interface Method}} with {{Second-Order Gradient Approximation}} for {{Elliptic Interface Problems}}},
+  author = {Zhang, Ray Zirui and Cheng, Li-Tien},
+  year = {2024},
+  month = jun,
+  journal = {Journal of Scientific Computing},
+  volume = {100},
+  number = {2},
+  pages = {32},
+  issn = {1573-7691},
+  doi = {10.1007/s10915-024-02587-1},
+  urldate = {2024-10-07},
+  abstract = {We propose the Compact Coupling Interface Method, a finite difference method capable of obtaining second-order accurate approximations of not only solution values but their gradients, for elliptic complex interface problems with interfacial jump conditions. Such elliptic interface boundary value problems with interfacial jump conditions are a critical part of numerous applications in fields such as heat conduction, fluid flow, materials science, and protein docking, to name a few. A typical example involves the construction of biomolecular shapes, where such elliptic interface problems are in the form of linearized Poisson--Boltzmann equations, involving discontinuous dielectric constants across the interface, that govern electrostatic contributions. Additionally, when interface dynamics are involved, the normal velocity of the interface might be comprised of the normal derivatives of solution, which can be approximated to second-order by our method, resulting in accurate interface dynamics. Our method, which can be formulated in arbitrary spatial dimensions, combines elements of the highly-regarded Coupling Interface Method, for such elliptic interface problems, and Smereka's second-order accurate discrete delta function. The result is a variation and hybrid with a more compact stencil than that found in the Coupling Interface Method, and with advantages, borne out in numerical experiments involving both geometric model problems and complex biomolecular surfaces, in more robust error profiles.},
+  langid = {english},
+  keywords = {Compact Coupling Interface Method,Complex interfaces,Elliptic interface problems,Second-order method for gradient},
+  file = {/Users/Ray/Zotero/storage/4IBRA289/Zhang and Cheng - 2024 - A Compact Coupling Interface Method with Second-Or.pdf}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{zhangCouplingMonteCarlo2021,
+  title = {Coupling {{Monte Carlo}}, {{Variational Implicit Solvation}}, and {{Binary Level-Set}} for {{Simulations}} of {{Biomolecular Binding}}},
+  author = {Zhang, Zirui and Ricci, Clarisse G. and Fan, Chao and Cheng, Li-Tien and Li, Bo and McCammon, J. Andrew},
+  year = {2021},
+  month = mar,
+  journal = {Journal of Chemical Theory and Computation},
+  publisher = {American Chemical Society},
+  issn = {1549-9618},
+  doi = {10.1021/acs.jctc.0c01109},
+  urldate = {2021-03-08},
+  abstract = {We develop a hybrid approach that combines the Monte Carlo (MC) method, a variational implicit-solvent model (VISM), and a binary level-set method for the simulation of biomolecular binding in an aqueous solvent. The solvation free energy for the biomolecular complex is estimated by minimizing the VISM free-energy functional of all possible solute--solvent interfaces that are used as dielectric boundaries. This functional consists of the solute volumetric, solute--solvent interfacial, solute--solvent van der Waals interaction, and electrostatic free energy. A technique of shifting the dielectric boundary is used to accurately predict the electrostatic part of the solvation free energy. Minimizing such a functional in each MC move is made possible by our new and fast binary level-set method. This method is based on the approximation of surface area by the convolution of an indicator function with a compactly supported kernel and is implemented by simple flips of numerical grid cells locally around the solute--solvent interface. We apply our approach to the p53-MDM2 system for which the two molecules are approximated by rigid bodies. Our efficient approach captures some of the poses before the final bound state. All-atom molecular dynamics simulations with most of such poses quickly reach the final bound state. Our work is a new step toward realistic simulations of biomolecular interactions. With further improvement of coarse graining and MC sampling, and combined with other models, our hybrid approach can be used to study the free-energy landscape and kinetic pathways of ligand binding to proteins.},
+  file = {/Users/Ray/Zotero/storage/KMAVMRNM/Zhang et al. - 2021 - Coupling Monte Carlo, Variational Implicit Solvati.pdf;/Users/Ray/Zotero/storage/XKMI3CSN/acs.jctc.html}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{zhangPersonalizedPredictionsGlioblastoma2025,
+  title = {Personalized Predictions of {{Glioblastoma}} Infiltration: {{Mathematical}} Models, {{Physics-Informed Neural Networks}} and Multimodal Scans},
+  shorttitle = {Personalized Predictions of {{Glioblastoma}} Infiltration},
+  author = {Zhang, Ray Zirui and Ezhov, Ivan and Balcerak, Michal and Zhu, Andy and Wiestler, Benedikt and Menze, Bjoern and Lowengrub, John S.},
+  year = {2025},
+  month = apr,
+  journal = {Medical Image Analysis},
+  volume = {101},
+  pages = {103423},
+  issn = {1361-8415},
+  doi = {10.1016/j.media.2024.103423},
+  urldate = {2025-02-05},
+  abstract = {Predicting the infiltration of Glioblastoma (GBM) from medical MRI scans is crucial for understanding tumor growth dynamics and designing personalized radiotherapy treatment plans. Mathematical models of GBM growth can complement the data in the prediction of spatial distributions of tumor cells. However, this requires estimating patient-specific parameters of the model from clinical data, which is a challenging inverse problem due to limited temporal data and the limited time between imaging and diagnosis. This work proposes a method that uses Physics-Informed Neural Networks (PINNs) to estimate patient-specific parameters of a reaction--diffusion partial differential equation (PDE) model of GBM growth from a single 3D structural MRI snapshot. PINNs embed both the data and the PDE into a loss function, thus integrating theory and data. Key innovations include the identification and estimation of characteristic non-dimensional parameters, a pre-training step that utilizes the non-dimensional parameters and a fine-tuning step to determine the patient specific parameters. Additionally, the diffuse-domain method is employed to handle the complex brain geometry within the PINN framework. The method is validated on both synthetic and patient datasets, showing promise for personalized GBM treatment through parametric inference within clinically relevant timeframes.},
+  keywords = {Glioma,Inverse modeling,Model calibration,MRI,Physics-Informed Neural Networks,Radiotherapy},
+  file = {/Users/Ray/Zotero/storage/XAYRL68F/1-s2.0-S1361841524003487-main.pdf;/Users/Ray/Zotero/storage/N2VNN59D/S1361841524003487.html},
+  note={<a href="https://github.com/rayzhangzirui/pinngbm" target="_blank">[GitHub]</a>}
 }
