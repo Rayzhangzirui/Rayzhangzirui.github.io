@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-# subtitle: <a href='https://www.wpi.edu/'>Worcester Polytechnic Institute</a>. 
+# subtitle: <a href='https://www.wpi.edu/'>Worcester Polytechnic Institute</a>.
 # Address. Contacts. Motto. Etc.
 
 profile:
@@ -28,11 +28,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-
 I am an Assistant Professor in the [Department of Mathematical Sciences](https://www.wpi.edu/academics/departments/mathematical-sciences) at [Worcester Polytechnic Institute (WPI)](https://www.wpi.edu/).
 
 Before this role, I was a Visiting Assistant Professor in the Department of Mathematics at the University of California, Irvine, mentored by [John Lowengrub](https://www.math.uci.edu/people/john-lowengrub). I obtained my Ph.D. at UC San Diego, advised by [Li-Tien Cheng](https://mathweb.ucsd.edu/~lcheng/), co-advised by [Bo Li](http://www.math.ucsd.edu/~bli/). Prior to my doctoral studies, I obtained my Bachelor of Engineering degree from the University of Hong Kong.
 
-
 My research interests lie in <strong>scientific machine learning</strong> and <strong>numerical analysis</strong>, with applications in <strong>biophysics</strong> and <strong>cancer research</strong>.
-

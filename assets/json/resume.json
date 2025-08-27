@@ -44,7 +44,7 @@
       "endDate": "2016-06-30"
     }
   ],
-  "Others":[
+  "Others": [
     {
       "name": "École Polytechnique",
       "position": "Research Intern",
@@ -111,12 +111,7 @@
   "interests": [
     {
       "name": "Research",
-      "keywords": [
-        "scientific machine learning",
-        "numerical analysis",
-        "biophysics",
-        "cancer research"
-      ]
+      "keywords": ["scientific machine learning", "numerical analysis", "biophysics", "cancer research"]
     }
   ],
   "volunteer": [
