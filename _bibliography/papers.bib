@@ -1,20 +1,3 @@
-@misc{balcerakIndividualizingGliomaRadiotherapy2024,
-  title = {Individualizing {{Glioma Radiotherapy Planning}} by {{Optimization}} of {{Data}} and {{Physics-Informed Discrete Loss}}},
-  author = {Balcerak, Michal and Weidner, Jonas and Karnakov, Petr and Ezhov, Ivan and Litvinov, Sergey and Koumoutsakos, Petros and Zhang, Ray Zirui and Lowengrub, John S. and Wiestler, Bene and Menze, Bjoern},
-  year = {2024},
-  month = feb,
-  number = {arXiv:2312.05063},
-  eprint = {2312.05063},
-  primaryclass = {physics, q-bio},
-  publisher = {arXiv},
-  urldate = {2024-03-13},
-  abstract = {Brain tumor growth is unique to each patient and extends beyond what is visible in imaging scans, infiltrating surrounding brain tissue. Understanding these hidden patient-specific progressions is essential for effective therapies. Current treatment plans for brain tumors, such as radiotherapy, typically involve delineating a uniform margin around the visible tumor on pre-treatment scans to target this invisible tumor growth. This "one size fits all" approach is derived from population studies and often fails to account for the nuances of individual patient conditions. We present the framework GliODIL which infers the full spatial distribution of tumor cell concentration from available multi-modal imaging. This is achieved through the newly introduced method of Optimizing the Discrete Loss (ODIL), where both data and physics-based constraints are softly assimilated into the solution. Our test dataset comprises 152 glioblastoma patients with pre-treatment imaging and post-treatment follow-ups for tumor recurrence monitoring. By blending data-driven techniques with physics-based constraints adapted for complex cases, GliODIL enhances recurrence prediction in radiotherapy planning, offering a superior alternative to traditional uniform margins and strict PDE adherence.},
-  archiveprefix = {arXiv},
-  keywords = {Mathematics - Numerical Analysis,Physics - Medical Physics,Quantitative Biology - Quantitative Methods},
-  file = {/Users/Ray/Zotero/storage/L8MN9FJZ/Balcerak et al. - 2024 - Individualizing Glioma Radiotherapy Planning by Op.pdf;/Users/Ray/Zotero/storage/T543VYEE/2312.html}
-}
-
-
 @article{liuExplicitsoluteImplicitsolventMolecular2023,
   title = {Explicit-Solute Implicit-Solvent Molecular Simulation with Binary Level-Set, Adaptive-Mobility, and {{GPU}}},
   author = {Liu, Shuang and Zhang, Zirui and Cheng, Hsiao-Bing and Cheng, Li-Tien and Li, Bo},
@@ -31,24 +14,44 @@
   file = {/Users/Ray/Zotero/storage/BHEHPVQG/Liu et al. - 2023 - Explicit-solute implicit-solvent molecular simulat.pdf;/Users/Ray/Zotero/storage/EYY525CM/S0021999122007367.html}
 }
 
-@misc{bilopart2,
-  title = {{{BiLO}}: {{Bilevel Local Operator Learning}} for {{PDE Inverse Problems}}. {{Part II}}: {{Efficient Uncertainty Quantification}} with {{Low-Rank Adaptation}}},
-  shorttitle = {{{BiLO}}},
+@misc{bbilo,
+  title = {Bayesian {{BiLO}}: {{Bilevel Local Operator Learning}} for {{Efficient Uncertainty Quantification}} of {{Bayesian PDE Inverse Problems}} with {{Low-Rank Adaptation}}},
+  shorttitle = {Bayesian {{BiLO}}},
   author = {Zhang, Ray Zirui and Miles, Christopher E. and Xie, Xiaohui and Lowengrub, John S.},
-  year = {2025},
-  month = jul,
+  year = 2026,
+  month = jan,
   number = {arXiv:2507.17019},
   eprint = {2507.17019},
   primaryclass = {cs},
   publisher = {arXiv},
   doi = {10.48550/arXiv.2507.17019},
-  urldate = {2025-07-24},
-  abstract = {Uncertainty quantification and inverse problems governed by partial differential equations (PDEs) are central to a wide range of scientific and engineering applications. In this second part of a two part series, we extend Bilevel Local Operator Learning (BiLO) for PDE-constrained optimization problems developed in Part 1 to the Bayesian inference framework. At the lower level, we train a network to approximate the local solution operator by minimizing the local operator loss with respect to the weights of the neural network. At the upper level, we sample the PDE parameters from the posterior distribution. We achieve efficient sampling through gradient-based Markov Chain Monte Carlo (MCMC) methods and low-rank adaptation (LoRA). Compared with existing methods based on Bayesian neural networks, our approach bypasses the challenge of sampling in the high-dimensional space of neural network weights and does not require specifying a prior distribution on the neural network solution. Instead, uncertainty propagates naturally from the data through the PDE constraints. By enforcing strong PDE constraints, the proposed method improves the accuracy of both parameter inference and uncertainty quantification. We analyze the dynamic error of the gradient in the MCMC sampler and the static error in the posterior distribution due to inexact minimization of the lower level problem and demonstrate a direct link between the tolerance for solving the lower level problem and the accuracy of the resulting uncertainty quantification. Through numerical experiments across a variety of PDE models, we demonstrate that our method delivers accurate inference and quantification of uncertainties while maintaining high computational efficiency.},
+  urldate = {2026-02-16},
+  abstract = {Uncertainty quantification in PDE inverse problems is essential in many applications. Scientific machine learning and AI enable data-driven learning of model components while preserving physical structure, and provide the scalability and adaptability needed for emerging imaging technologies and clinical insights. We develop a Bilevel Local Operator Learning framework for Bayesian inference in PDEs (B-BiLO). At the upper level, we sample parameters from the posterior via Hamiltonian Monte Carlo, while at the lower level we fine-tune a neural network via low-rank adaptation (LoRA) to approximate the solution operator locally. B-BiLO enables efficient gradient-based sampling without synthetic data or adjoint equations and avoids sampling in high-dimensional weight space, as in Bayesian neural networks, by optimizing weights deterministically. We analyze errors from approximate lower-level optimization and establish their impact on posterior accuracy. Numerical experiments across PDE models, including tumor growth, demonstrate that B-BiLO achieves accurate and efficient uncertainty quantification.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning},
-  file = {/Users/Ray/Zotero/storage/BJBTAZ4P/Zhang et al. - 2025 - BiLO Bilevel Local Operator Learning for PDE Inve.pdf;/Users/Ray/Zotero/storage/MS4RVTQM/2507.html},
-  note = {<a href="https://github.com/Rayzhangzirui/BILO" target="_blank">[GitHub]</a>}
+  file = {/Users/Ray/Zotero/storage/66T6DRN3/Zhang et al. - 2026 - Bayesian BiLO Bilevel Local Operator Learning for Efficient Uncertainty Quantification of Bayesian.pdf;/Users/Ray/Zotero/storage/IUWI5LVG/2507.html},
+  note = {<a href="https://github.com/Rayzhangzirui/bilo" target="_blank">[GitHub]</a>}
 }
+
+@article{gliodil,
+  title = {Individualizing Glioma Radiotherapy Planning by Optimization of a Data and Physics-Informed Discrete Loss},
+  author = {Balcerak, Michal and Weidner, Jonas and Karnakov, Petr and Ezhov, Ivan and Litvinov, Sergey and Koumoutsakos, Petros and Amiranashvili, Tamaz and Zhang, Ray Zirui and Lowengrub, John S. and Yakushev, Igor and Wiestler, Benedikt and Menze, Bjoern},
+  year = 2025,
+  month = jul,
+  journal = {Nature Communications},
+  volume = {16},
+  number = {1},
+  pages = {1--16},
+  publisher = {Nature Publishing Group},
+  issn = {2041-1723},
+  doi = {10.1038/s41467-025-60366-4},
+  urldate = {2025-07-01},
+  abstract = {Brain tumor growth is unique to each glioma patient and extends beyond what is visible in imaging scans, infiltrating surrounding brain tissue. Understanding these hidden patient-specific progressions is essential for effective therapies. Current treatment plans for brain tumors, such as radiotherapy, typically involve delineating a uniform margin around the visible tumor on pre-treatment scans to target this invisible tumor growth. This ``one size fits all" approach is derived from population studies and often fails to account for the nuances of individual patient conditions. We present the Glioma Optimizing the Discrete Loss (GliODIL) framework, which infers the full spatial distribution of tumor cell concentration from available multi-modal imaging, leveraging a Fisher-Kolmogorov type physics model to describe tumor growth. This is achieved through the newly introduced method of Optimizing the Discrete Loss (ODIL), where both data and physics-based constraints are softly assimilated into the solution. Our test dataset comprises 152 glioblastoma patients with pre-treatment imaging and post-treatment follow-ups for tumor recurrence monitoring. By blending data-driven techniques with physics-based constraints, GliODIL enhances recurrence prediction in radiotherapy planning, challenging traditional uniform margins and strict adherence to the Fisher-Kolmogorov partial differential equation model, which is adapted for complex cases. Current treatment plans for brain tumors fail to account for the nuances of diversified individual patient conditions regarding the tumor infiltrating margins in brain tissues. Here this group reports a Fisher-Kolmogorov type physics model inferring the full spatial distribution of tumor cell concentration from available multi-modal imaging on glioblastoma patients for tumor recurrence monitoring.},
+  copyright = {2025 The Author(s)},
+  langid = {english},
+  keywords = {Cancer models,Image processing,Machine learning,Radiotherapy},
+}
+
 
 @article{zhangBinaryLevelSet2023,
   title = {Binary {{Level Set Method}} for {{Variational Implicit Solvation Model}}},
@@ -66,24 +69,24 @@
 }
 
 
-@misc{zhangBiLOBilevelLocal2025,
-  title = {{{BiLO}}: {{Bilevel Local Operator Learning}} for {{PDE Inverse Problems}}. {{Part I}}: {{PDE-Constrained Optimization}}},
+@article{bilo,
+  title = {{{BiLO}}: {{Bilevel Local Operator Learning}} for {{PDE Inverse Problems}}},
   shorttitle = {{{BiLO}}},
   author = {Zhang, Ray Zirui and Miles, Christopher E. and Xie, Xiaohui and Lowengrub, John S.},
-  year = {2025},
-  month = jul,
-  number = {arXiv:2404.17789},
-  eprint = {2404.17789},
-  primaryclass = {cs},
-  publisher = {arXiv},
-  doi = {10.48550/arXiv.2404.17789},
-  urldate = {2025-07-22},
-  abstract = {We propose a new neural network based method for solving inverse problems for partial differential equations (PDEs) by formulating the PDE inverse problem as a bilevel optimization problem. At the upper level, we minimize the data loss with respect to the PDE parameters. At the lower level, we train a neural network to locally approximate the PDE solution operator in the neighborhood of a given set of PDE parameters, which enables an accurate approximation of the descent direction for the upper level optimization problem. The lower level loss function includes the L2 norms of both the residual and its derivative with respect to the PDE parameters. We apply gradient descent simultaneously on both the upper and lower level optimization problems, leading to an effective and fast algorithm. The method, which we refer to as BiLO (Bilevel Local Operator learning), is also able to efficiently infer unknown functions in the PDEs through the introduction of an auxiliary variable. We provide a theoretical analysis that justifies our approach. Through extensive experiments over multiple PDE systems, we demonstrate that our method enforces strong PDE constraints, is robust to sparse and noisy data, and eliminates the need to balance the residual and the data loss, which is inherent to the soft PDE constraints in many existing methods.},
-  archiveprefix = {arXiv},
-  keywords = {Computer Science - Machine Learning,Computer Science - Numerical Analysis,Mathematics - Numerical Analysis,Mathematics - Optimization and Control},
-  file = {/Users/Ray/Zotero/storage/4IDF3PHR/Zhang et al. - 2025 - BiLO Bilevel Local Operator Learning for PDE Inve.pdf;/Users/Ray/Zotero/storage/G6K4JTCR/2404.html},
-  note = {<a href="https://github.com/Rayzhangzirui/BILO" target="_blank">[GitHub]</a>}
+  year = 2026,
+  month = apr,
+  journal = {Journal of Computational Physics},
+  volume = {551},
+  pages = {114679},
+  issn = {0021-9991},
+  doi = {10.1016/j.jcp.2026.114679},
+  urldate = {2026-01-21},
+  abstract = {We propose a new neural network based method for solving inverse problems for partial differential equations (PDEs) by formulating the PDE inverse problem as a bilevel optimization problem. At the upper level, we minimize the data loss with respect to the PDE parameters. At the lower level, we train a neural network to locally approximate the PDE solution operator in the neighborhood of a given set of PDE parameters, which enables an accurate approximation of the descent direction for the upper level optimization problem. The lower level loss function includes the least-square penalty of both the residual and its derivative with respect to the PDE parameters. We apply gradient descent simultaneously on both the upper and lower level optimization problems, leading to an effective and fast algorithm. The method, which we refer to as BiLO (Bilevel Local Operator learning), is also able to efficiently infer unknown functions in the PDEs through the introduction of an auxiliary variable. We provide a theoretical analysis that justifies our approach. Through extensive experiments over multiple PDE systems, we demonstrate that our method enforces strong PDE constraints, is robust to sparse and noisy data, and eliminates the need to balance the residual and the data loss, which is inherent to the soft PDE constraints in many existing methods.},
+  keywords = {Bilevel optimization,Neural operators,PDE inverse problems,Scientific machine learning},
+  file = {/Users/Ray/Zotero/storage/IEXWYMPA/Zhang et al. - 2026 - BiLO Bilevel Local Operator Learning for PDE Inverse Problems.pdf;/Users/Ray/Zotero/storage/76UTHBIZ/S002199912600029X.html},
+  note = {<a href="https://github.com/Rayzhangzirui/bilo" target="_blank">[GitHub]</a>}
 }
+
 
 
 @article{jingRunoutScalingDeposit2018a,

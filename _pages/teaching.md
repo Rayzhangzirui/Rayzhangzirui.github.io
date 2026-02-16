@@ -6,6 +6,11 @@ title: Teaching
 nav: true
 nav_order: 6
 ---
+## WPI
+
+- MA 2021  Probability for Applications (26A)
+
+- MA 1024 Calculus IV (26C)
 
 ## UC Irvine
 
