@@ -1,0 +1,21 @@
+# Selected projects shown on the homepage (thumbnail left, description right)
+
+- title: "Bilevel Local Operator Learning for PDE Inverse Problems"
+  description: " Many scientific models contain unknown parameters that must be inferred from data. We develop a neural-network-based method that identifies the best parameters while respecting the underlying model, using a two-level optimization scheme.
+  Try the interactive [Physics-Informed Machine Learning Playground](https://rayzhangzirui.github.io/physics-informed-playground/) to explore PINNs and BiLO on simple ODEs."
+  url: "https://rayzhangzirui.github.io/physics-informed-playground/"
+  media_type: "image"
+  media_path: "assets/img/playground_snapshot.png"
+  citation: "Zhang, R.Z., Miles, C.E., Xie, X., Lowengrub, J.S., 2026. BiLO: Bilevel Local Operator Learning for PDE Inverse Problems. Journal of Computational Physics."
+
+- title: "Personalized Predictions of Glioblastoma Infiltration"
+  description: "Brain tumors, such as glioblastomas, often grow invisibly beyond what standard MRI scans can show. While this hidden infiltration can't be fully measured, it follows physical laws of growth and diffusion that can be modeled using partial differential equations (PDEs). By combining these mathematical models with machine learning, we aim to make personalized predictions of tumor spread, paving the way for highly targeted and effective treatment planning."
+  media_type: "video"
+  media_path: "assets/video/movie_growth_rotate.mp4"
+  citation: "Zhang, R.Z., Ezhov, I., Balcerak, M., Zhu, A., Wiestler, B., Menze, B., Lowengrub, J.S., 2025. Personalized predictions of Glioblastoma infiltration: Mathematical models, Physics-Informed Neural Networks and multimodal scans. Medical Image Analysis."
+
+- title: "Binary Level Set Method"
+  description: "Mathematically, a surface is simply a boundary that separates the \"inside\" from the \"outside.\" By intelligently flipping grid points between these two states (hence, \"binary\"), we can efficiently compute optimal surfaces. We use this algorithm to study the interface between water and a protein, which affect the binding process"
+  media_type: "image"
+  media_path: "assets/img/fig_bvism_loose_bubble.png"
+  citation: "Zhang, R.Z., Cheng, L.-T., 2023. Binary Level Set Method for Variational Implicit Solvation Model. SIAM J. Sci. Comput."
