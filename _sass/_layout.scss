@@ -51,3 +51,48 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+/*****************************************************************************
+* Selected projects (homepage)
+*****************************************************************************/
+
+.selected-project-citation {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--global-text-color-light);
+  font-style: normal;
+}
+
+.selected-project-video-wrapper {
+  height: 300px;
+  overflow: hidden;
+
+  .selected-project-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}
+
+/*****************************************************************************
+* Font size overrides (adjust to reduce large titles/name)
+* - Homepage name: .post .post-header .post-title
+* - Section headings (e.g. "Selected Publication"): .post h2
+* - Selected publication item titles: .selected-projects h3
+* - Other: .header-bar h1 (category pages, 5rem), .publications h1 (2rem)
+*****************************************************************************/
+
+.post .post-header .post-title {
+  font-size: 1.55rem; /* was Bootstrap default ~2rem; reduce as needed */
+}
+
+.post h2 {
+  font-size: 1.35rem; /* section titles on about page */
+}
+
+.selected-projects h3 {
+  font-size: 1.15rem; /* project title in Selected Publication; reduce as needed */
+  font-weight: bold;
+}

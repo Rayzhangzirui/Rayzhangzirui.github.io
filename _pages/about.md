@@ -14,6 +14,7 @@ profile:
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
 
+selected_projects: true # includes selected projects (data in _data/selected_projects.yml)
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 

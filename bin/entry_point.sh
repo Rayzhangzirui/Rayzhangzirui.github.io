@@ -21,6 +21,8 @@ manage_gemfile_lock() {
 
 start_jekyll() {
     manage_gemfile_lock
+    # Install gems for current platform (e.g. aarch64 when image was built for x86_64)
+    bundle install --no-cache
     bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
 }
 
