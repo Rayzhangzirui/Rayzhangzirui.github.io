@@ -1,0 +1,44 @@
+<div class="selected-projects">
+  {% for project in site.data.selected_projects %}
+    <div class="row mb-4 align-items-start">
+      <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+        {% if project.media_type == 'image' and project.media_path %}
+          {% if project.url %}
+            <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+              {% include figure.liquid path=project.media_path loading="eager" class="img-fluid rounded" alt=project.title %}
+            </a>
+          {% else %}
+            {% include figure.liquid path=project.media_path loading="eager" class="img-fluid rounded" alt=project.title %}
+          {% endif %}
+        {% elsif project.media_type == 'video' and project.media_path %}
+          <div class="selected-project-video-wrapper rounded overflow-hidden">
+            {% include video.liquid path=project.media_path class="selected-project-video" autoplay=true loop=true muted=true %}
+          </div>
+        {% elsif project.media_type == 'link' and project.url %}
+          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="d-block text-decoration-none">
+            <div class="rounded p-4 text-center border bg-light hoverable" style="min-height: 180px; display: flex; flex-direction: column; justify-content: center;">
+              <i class="ti ti-player-play fs-1 text-body-secondary mb-2"></i>
+              <span class="text-body fw-medium">Open Physics-Informed ML Playground</span>
+            </div>
+          </a>
+        {% endif %}
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h3 class="mb-2">
+          {% if project.url and project.media_type != 'video' %}
+            <a href="{{ project.url }}" {% if project.media_type == 'link' %}target="_blank" rel="noopener noreferrer"{% endif %} style="color: inherit;">{{ project.title }}</a>
+          {% else %}
+            {{ project.title }}
+          {% endif %}
+        </h3>
+        <div class="text-justify mb-1">{{ project.description | markdownify }}</div>
+        {% if project.url and project.media_type == 'image' and project.title contains 'BiLO' %}
+          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mt-2">Try the playground →</a>
+        {% endif %}
+        {% if project.citation %}
+          <p class="selected-project-citation mt-2 mb-0">{{ project.citation }}</p>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
