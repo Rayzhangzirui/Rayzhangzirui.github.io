@@ -14,16 +14,15 @@
   file = {/Users/Ray/Zotero/storage/BHEHPVQG/Liu et al. - 2023 - Explicit-solute implicit-solvent molecular simulat.pdf;/Users/Ray/Zotero/storage/EYY525CM/S0021999122007367.html}
 }
 
-@misc{bbilo,
+@article{bbilo,
   title = {Bayesian {{BiLO}}: {{Bilevel Local Operator Learning}} for {{Efficient Uncertainty Quantification}} of {{Bayesian PDE Inverse Problems}} with {{Low-Rank Adaptation}}},
   shorttitle = {Bayesian {{BiLO}}},
   author = {Zhang, Ray Zirui and Miles, Christopher E. and Xie, Xiaohui and Lowengrub, John S.},
   year = 2026,
-  month = jan,
-  number = {arXiv:2507.17019},
+  month = aug,
+  journal = {Nature Communications (accepted)},
   eprint = {2507.17019},
   primaryclass = {cs},
-  publisher = {arXiv},
   doi = {10.48550/arXiv.2507.17019},
   urldate = {2026-02-16},
   abstract = {Uncertainty quantification in PDE inverse problems is essential in many applications. Scientific machine learning and AI enable data-driven learning of model components while preserving physical structure, and provide the scalability and adaptability needed for emerging imaging technologies and clinical insights. We develop a Bilevel Local Operator Learning framework for Bayesian inference in PDEs (B-BiLO). At the upper level, we sample parameters from the posterior via Hamiltonian Monte Carlo, while at the lower level we fine-tune a neural network via low-rank adaptation (LoRA) to approximate the solution operator locally. B-BiLO enables efficient gradient-based sampling without synthetic data or adjoint equations and avoids sampling in high-dimensional weight space, as in Bayesian neural networks, by optimizing weights deterministically. We analyze errors from approximate lower-level optimization and establish their impact on posterior accuracy. Numerical experiments across PDE models, including tumor growth, demonstrate that B-BiLO achieves accurate and efficient uncertainty quantification.},
@@ -67,6 +66,18 @@
   keywords = {Cancer models,Image processing,Machine learning,Radiotherapy},
 }
 
+
+@article{predictgbm,
+  title = {{{PREDICT-GBM}}: {{A}} Multi-Center Platform to Advance Personalized Glioblastoma Radiotherapy Planning},
+  shorttitle = {{{PREDICT-GBM}}},
+  author = {Zimmer, Lucas and Weidner, Jonas and Balcerak, Michal and Kofler, Florian and Krupa, Mara and Ezhov, Ivan and Cepeda, Santiago and Zhang, Ray Zirui and Lowengrub, John S. and Menze, Bjoern and Wiestler, Benedikt},
+  year = 2026,
+  month = aug,
+  journal = {npj Digital Medicine (accepted)},
+  eprint = {2509.13360},
+  archiveprefix = {arXiv},
+  abstract = {Glioblastoma recurrence commonly extends beyond the visible tumor boundary, and standard radiotherapy relies on uniform margins that ignore individual biological and anatomical variation. PREDICT-GBM is an open-source, multi-center platform that pairs a large longitudinal patient dataset with a standardized validation pipeline to develop and benchmark personalized radiotherapy planning approaches, including biophysical tumor growth models, enabling systematic comparison of modeling strategies for improved recurrence coverage.}
+}
 
 @article{zhangBinaryLevelSet2023,
   title = {Binary {{Level Set Method}} for {{Variational Implicit Solvation Model}}},
